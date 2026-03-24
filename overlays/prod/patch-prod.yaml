@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-app
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+        - name: springboot-app
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "prod"
