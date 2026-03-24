@@ -4,7 +4,7 @@ namespace: qa
 resources:
   - ../../base
 images:
-  - name: YOUR_DOCKERHUB/springboot-app
+  - name: harshanamj/springboot-app
     newTag: latest     # Jenkins will update this line
 patches:
   - path: patch-qa.yaml
