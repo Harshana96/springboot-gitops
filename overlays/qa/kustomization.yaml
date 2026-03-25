@@ -5,6 +5,6 @@ resources:
   - ../../base
 images:
   - name: harshanamj/springboot-app
-    newTag: qa-a6f2cc9    # Jenkins will update this line
+    newTag: qa-a6f2cc9    
 patches:
   - path: patch-qa.yaml

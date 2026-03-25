@@ -5,6 +5,6 @@ resources:
   - ../../base
 images:
   - name: harshanamj/springboot-app
-    newTag: dev-e0f504f     # Jenkins will update this line
+    newTag: dev-e0f504f     
 patches:
   - path: patch-dev.yaml
