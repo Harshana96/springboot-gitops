@@ -7,4 +7,5 @@ images:
   - name: harshanamj/springboot-app
     newTag: dev-e0f504f     
 patches:
-  - path: patch-dev.yaml
+  - path: patch-dev.yaml        # deployment patch
+  - path: patch-svc-dev.yaml    # service patch

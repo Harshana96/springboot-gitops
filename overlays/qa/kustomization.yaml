@@ -8,3 +8,4 @@ images:
     newTag: qa-a6f2cc9    
 patches:
   - path: patch-qa.yaml
+  - path: patch-svc-qa.yaml
