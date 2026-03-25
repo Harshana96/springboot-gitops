@@ -8,4 +8,4 @@ images:
     newTag: qa-c05f89f
 patches:
   - path: patch-qa.yaml
-  - path: patch-svc-qa.yaml
+  # - path: patch-svc-qa.yaml

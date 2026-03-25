@@ -8,4 +8,4 @@ images:
     newTag: main-df6883a
 patches:
   - path: patch-prod.yaml        # deployment patch
-  - path: patch-svc-prod.yaml    # service patch
+  # - path: patch-svc-prod.yaml    # service patch

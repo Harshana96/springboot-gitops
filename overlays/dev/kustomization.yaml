@@ -8,4 +8,4 @@ images:
     newTag: dev-5c1fab4
 patches:
   - path: patch-dev.yaml        # deployment patch
-  - path: patch-svc-dev.yaml    # service patch
+  # - path: patch-svc-dev.yaml    # service patch
