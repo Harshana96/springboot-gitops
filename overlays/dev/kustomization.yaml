@@ -5,7 +5,7 @@ resources:
   - ../../base
 images:
   - name: harshanamj/springboot-app
-    newTag: dev-5c1fab4
+    newTag: dev-975a422
 patches:
   - path: patch-dev.yaml        # deployment patch
   # - path: patch-svc-dev.yaml    # service patch
