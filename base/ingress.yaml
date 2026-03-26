@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Ingress
+metadata:
+  name: springboot-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: springboot-service
+            port:
+              number: 80
