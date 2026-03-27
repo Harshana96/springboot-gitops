@@ -9,4 +9,4 @@ images:
 patches:
   - path: patch-dev.yaml        # deployment patch
   - path: ingress-patch.yaml     # ingress patch
-  # - path: patch-svc-dev.yaml    # service patch
+  - path: patch-svc-dev.yaml    # service patch
