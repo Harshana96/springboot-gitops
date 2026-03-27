@@ -5,7 +5,7 @@ resources:
   - ../../base
 images:
   - name: harshanamj/springboot-app
-    newTag: qa-c05f89f
+    newTag: qa-5d7d53e
 patches:
   - path: patch-qa.yaml
   - path: ingress-patch.yaml
