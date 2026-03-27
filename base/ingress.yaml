@@ -1,4 +1,4 @@
-apiVersion: akustomize.config.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: springboot-ingress
@@ -11,6 +11,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: springboot-service
+            name: springboot-app    # match your actual svc name
             port:
               number: 80
