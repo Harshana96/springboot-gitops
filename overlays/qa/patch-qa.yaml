@@ -10,7 +10,7 @@ spec:
         - name: springboot-app
           env:
             - name: SPRING_PROFILES_ACTIVE
-              value: "dev"
+              value: "qa"
             - name: SPRING_DATASOURCE_URL
               value: jdbc:postgresql://postgres:5432/appdb
             - name: SPRING_DATASOURCE_USERNAME
