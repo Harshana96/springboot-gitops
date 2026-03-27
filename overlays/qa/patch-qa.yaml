@@ -3,11 +3,25 @@ kind: Deployment
 metadata:
   name: springboot-app
 spec:
-  replicas: 1
+  replicas: 2
   template:
     spec:
       containers:
         - name: springboot-app
           env:
             - name: SPRING_PROFILES_ACTIVE
-              value: "qa"
+              value: "dev"
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:postgresql://postgres:5432/appdb
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: username
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: password
+            - name: SPRING_JPA_HIBERNATE_DDL_AUTO
+              value: validate
